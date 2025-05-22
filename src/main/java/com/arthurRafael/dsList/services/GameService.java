@@ -25,6 +25,8 @@ public class GameService{
 		return dto;
 	}
 	
+	
+	//Fazer posteriormente um tratamento de excessão 
 	@Transactional(readOnly = true)
 	public GameDTO findById(Long id) {
 		Game result = gameRepository.findById(id).get();
